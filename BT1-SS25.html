@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let soNguyenDuong = prompt("Nhập vào một số nguyên dương: ");
+
+soNguyenDuong = parseInt(soNguyenDuong);
+
+if (isNaN(soNguyenDuong) || soNguyenDuong <= 0) {
+    alert("Vui lòng nhập một số nguyên dương hợp lệ.");
+} else {
+
+    let tong = 0;
+
+    for (let i = 1; i <= soNguyenDuong; i++) {
+        console.log(i);
+        tong += i;
+    }
+
+    if (tong % 2 !== 0) {
+        console.log("Tổng các số là số lẻ: " + tong);
+    } else {
+        console.log("Tổng các số không phải là số lẻ.");
+    }
+}
+    </script>
+</body>
+</html>

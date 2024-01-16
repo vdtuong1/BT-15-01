@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let n = prompt("Nhập vào một số nguyên dương:");
+
+n = parseInt(n);
+
+let fib1 = 0, fib2 = 1, nextTerm;
+
+for (let i = 3; i <= n; i++) {
+    nextTerm = fib1 + fib2;
+    fib1 = fib2;
+    fib2 = nextTerm;
+}
+
+if (n === 1) {
+    console.log(`Số Fibonacci thứ ${n} là: ${fib1}`);
+} else {
+    console.log(`Số Fibonacci thứ ${n} là: ${fib2}`);
+}
+
+    </script>
+</body>
+</html>

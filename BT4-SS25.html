@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+let n = prompt("Nhập vào một số nguyên dương:");
+
+n = parseInt(n);
+
+let S = 0;
+let currentTerm = 0;
+let multiplier = 1;
+
+for (let i = 1; i <= n; i++) {
+    currentTerm = currentTerm * Math.pow(10, Math.floor(Math.log10(i)) + 1) + i;
+    
+    S += currentTerm;
+}
+console.log(`Giá trị của biểu thức S là: ${S}`);
+
+    </script>
+</body>
+</html>
